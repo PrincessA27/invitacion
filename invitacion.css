@@ -157,7 +157,7 @@ body {
   position: absolute;
   border-left: 180px solid transparent;
   border-right: 180px solid transparent;
-  border-top: 120px solid #E0E0E0;
+  border-top: 120px solid #FEF3C6;
   border-bottom: 120px solid transparent;
   transition: transform .75s ease-in-out;
   transform-origin: top center;
@@ -169,10 +169,10 @@ body {
 }
 
 .carta {
-  border-left: 180px solid #FAFAFA;
-  border-right: 180px solid #EEEEEE;
+  border-left: 180px solid #fff1bb;
+  border-right: 180px solid #fff3c1;
   border-top: 120px solid transparent;
-  border-bottom: 120px solid #FAFAFA;
+  border-bottom: 120px solid #fff1bb;
 }
 
 /* Boton cerrar — centrado debajo de la nota */
@@ -180,7 +180,7 @@ body {
   display: block;
   margin: 5.5rem auto 0;       /* 👈 centrado horizontal con auto */
   padding: 10px 24px;
-  background: linear-gradient(135deg, #FBF5DD, #FFF6DE);
+  background: linear-gradient(135deg, #FEF3C6, #FEF3C6);
   border: none;
   border-radius: 6px;
   color: #09090B;
