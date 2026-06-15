@@ -271,7 +271,7 @@ body {
 .hoja:nth-of-type(6) {
   position: relative;
   justify-content: flex-start;     /* 👈 texto arriba */
-  padding-top: 12vh;
+  padding-top: 16vh;
   padding-bottom: 35vh;            /* 👈 reserva el espacio donde estara la pareja */
   gap: 1rem;
 }
@@ -279,7 +279,7 @@ body {
 /* Pareja anclada al fondo, centrada horizontal */
 .hoja:nth-of-type(6) .pareja-img {
   position: absolute;
-  bottom: 8vh;
+  bottom: 15vh;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
