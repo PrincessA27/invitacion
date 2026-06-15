@@ -260,7 +260,7 @@ body {
 
 /* Imagen de la pareja en Nota Importante */
 .pareja-img {
-  height: 30rem;             /* 👈 ajusta el tamaño aqui */
+  height: 25rem;             /* 👈 ajusta el tamaño aqui */
   width: auto;
   display: block;
   margin: 0.5rem auto;
@@ -268,8 +268,11 @@ body {
 }
 
 /* Hoja "Nota Importante" — bajar el contenido */
-.hoja:nth-of-type(6) {
-  justify-content: flex-start;
-  padding-top: 12vh;        /* 👈 sube/baja con esto */
-  gap: 1rem;
+.hoja:nth-of-type(6) .pareja-img {
+  position: absolute;
+  bottom: 4vh;
+  left: 50%;
+  transform: translateX(-65%);   /* 👈 -65% en vez de -50% lo mueve a la izquierda */
+  margin: 0;
 }
+
