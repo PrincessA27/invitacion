@@ -178,7 +178,7 @@ body {
 /* Boton cerrar — centrado debajo de la nota */
 .cerrar {
   display: block;
-  margin: 5.5rem auto 0;       /* 👈 centrado horizontal con auto */
+  margin: 0.75rem auto 0;       /* 👈 centrado horizontal con auto */
   padding: 10px 24px;
   background: linear-gradient(135deg, #FEF3C6, #FEF3C6);
   border: none;
@@ -241,8 +241,35 @@ body {
 .txt-xl       { font-size: 2.2rem  !important; }
 .txt-xxl      { font-size: 3rem    !important; }
 
-/* Hoja de Recepcion — empuja el contenido un poco mas abajo */
+/* Hoja de Recepcion */
 .hoja:last-of-type {
+  position: relative;             /* 👈 ancla para el boton */
+  justify-content: center;
+  padding: 15vh 12vw 15vh 12vw;
+  gap: 0.4rem;
+}
+
+/* Boton cerrar — anclado al fondo de la hoja */
+.hoja:last-of-type .cerrar {
+  position: absolute;
+  bottom: 10vh;                    /* 👈 distancia desde abajo (sube/baja con esto) */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;                      /* anula margins anteriores */
+}
+
+/* Imagen de la pareja en Nota Importante */
+.pareja-img {
+  height: 30rem;             /* 👈 ajusta el tamaño aqui */
+  width: auto;
+  display: block;
+  margin: 0.5rem auto;
+  object-fit: contain;
+}
+
+/* Hoja "Nota Importante" — bajar el contenido */
+.hoja:nth-of-type(6) {
   justify-content: flex-start;
-  padding-top: 18vh;          /* 👈 antes 12vh, ahora con mas espacio arriba */
+  padding-top: 12vh;        /* 👈 sube/baja con esto */
+  gap: 1rem;
 }
